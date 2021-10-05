@@ -13,10 +13,12 @@ namespace Win.ProCosmeticos
 {
     public partial class FormBrochas : Form
     {
-        BrochasBL 
+        BrochasBL _brochas; 
         public FormBrochas()
         {
             InitializeComponent();
+            _brochas = new BrochasBL();
+            listaEsponjaBindingSource.DataSource = _brochas.ObtenerBrochasBL();
 
             
         }
@@ -24,6 +26,11 @@ namespace Win.ProCosmeticos
         private void FormBrochas_Load(object sender, EventArgs e)
         {
            
+
+        }
+
+        private void listaEsponjaDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

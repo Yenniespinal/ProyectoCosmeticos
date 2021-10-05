@@ -8,5 +8,10 @@ namespace Win.ProCosmeticos
         {
             throw new NotImplementedException();
         }
+
+        internal object ObtenerBrochasBL()
+        {
+            
+        }
     }
 }

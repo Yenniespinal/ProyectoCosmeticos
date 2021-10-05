@@ -161,8 +161,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="Properties\DataSources\BL.Cosmeticos.Brochas.datasource" />
-    <None Include="Properties\DataSources\BL.Cosmeticos.BrochasBL.datasource" />
     <None Include="Properties\DataSources\BL.Cosmeticos.Esponja.datasource" />
     <None Include="Properties\DataSources\BL.Cosmeticos.EsponjasBL.datasource" />
     <None Include="Properties\DataSources\BL.Cosmeticos.MaquillajeBL.datasource" />
