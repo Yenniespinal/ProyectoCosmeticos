@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BL.Cosmeticos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,12 @@ namespace Win.ProCosmeticos
 {
     public partial class FormBrochas : Form
     {
+        BrochasBL 
         public FormBrochas()
         {
             InitializeComponent();
+
+            
         }
 
         private void FormBrochas_Load(object sender, EventArgs e)

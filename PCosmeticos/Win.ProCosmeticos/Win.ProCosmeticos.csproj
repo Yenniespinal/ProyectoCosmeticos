@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BrochasBL.cs" />
     <Compile Include="CodigoVendedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +161,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Properties\DataSources\BL.Cosmeticos.Brochas.datasource" />
+    <None Include="Properties\DataSources\BL.Cosmeticos.BrochasBL.datasource" />
+    <None Include="Properties\DataSources\BL.Cosmeticos.Esponja.datasource" />
+    <None Include="Properties\DataSources\BL.Cosmeticos.EsponjasBL.datasource" />
+    <None Include="Properties\DataSources\BL.Cosmeticos.MaquillajeBL.datasource" />
+    <None Include="Properties\DataSources\BL.Cosmeticos.Producto.datasource" />
+    <None Include="Properties\DataSources\BL.Cosmeticos.ProductosBL.datasource" />
+    <None Include="Properties\DataSources\BL.Cosmeticos.SeguridadBL.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
