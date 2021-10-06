@@ -108,6 +108,36 @@ namespace BL.Cosmeticos
 
             ListaMaquillaje.Add(Maquillaje10);
 
+            var Maquillaje11 = new Maquillaje();
+            Maquillaje11.Id = 11;
+            Maquillaje11.Descripcion = "BE BELLA Set De Brochas 24 Pcs Take Me To Malibu  ";
+            Maquillaje11.Precio = 790;
+            Maquillaje11.Existencia = 15;
+            Maquillaje11.Activo = true;
+
+            ListaMaquillaje.Add(Maquillaje11);
+
+            var Maquillaje12 = new Maquillaje();
+            Maquillaje12.Id = 12;
+            Maquillaje12.Descripcion = "SUGAR KISS Set De Brochas 10 Piezas ";
+            Maquillaje12.Precio = 290;
+            Maquillaje12.Existencia = 15;
+            Maquillaje12.Activo = true;
+
+            ListaMaquillaje.Add(Maquillaje12);
+
+            var Maquillaje13 = new Maquillaje();
+            Maquillaje13.Id = 13;
+            Maquillaje13.Descripcion = "CANDICE Set De Brochas 24 Piezas - Candice";
+            Maquillaje13.Precio = 297;
+            Maquillaje13.Existencia = 15;
+            Maquillaje13.Activo = true;
+
+            ListaMaquillaje.Add(Maquillaje13);
+
+
+
+
         }
         public BindingList<Maquillaje> ObtenerMaquillaje()
         {

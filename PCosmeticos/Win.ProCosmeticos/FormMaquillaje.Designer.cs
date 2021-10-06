@@ -88,7 +88,7 @@
             this.maquillajeBLBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.maquillajeBLBindingNavigator.Name = "maquillajeBLBindingNavigator";
             this.maquillajeBLBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.maquillajeBLBindingNavigator.Size = new System.Drawing.Size(493, 25);
+            this.maquillajeBLBindingNavigator.Size = new System.Drawing.Size(543, 25);
             this.maquillajeBLBindingNavigator.TabIndex = 0;
             this.maquillajeBLBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -204,7 +204,7 @@
             this.listaMaquillajeDataGridView.DataSource = this.listaMaquillajeBindingSource;
             this.listaMaquillajeDataGridView.Location = new System.Drawing.Point(0, 28);
             this.listaMaquillajeDataGridView.Name = "listaMaquillajeDataGridView";
-            this.listaMaquillajeDataGridView.Size = new System.Drawing.Size(481, 220);
+            this.listaMaquillajeDataGridView.Size = new System.Drawing.Size(542, 363);
             this.listaMaquillajeDataGridView.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn1
@@ -212,36 +212,41 @@
             this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
             this.dataGridViewTextBoxColumn1.HeaderText = "Id";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 50;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "Descripcion";
             this.dataGridViewTextBoxColumn2.HeaderText = "Descripcion";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 300;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "Precio";
             this.dataGridViewTextBoxColumn3.HeaderText = "Precio";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 50;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "Existencia";
             this.dataGridViewTextBoxColumn4.HeaderText = "Existencia";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 50;
             // 
             // dataGridViewCheckBoxColumn1
             // 
             this.dataGridViewCheckBoxColumn1.DataPropertyName = "Activo";
             this.dataGridViewCheckBoxColumn1.HeaderText = "Activo";
             this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
+            this.dataGridViewCheckBoxColumn1.Width = 50;
             // 
             // FormMaquillaje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(493, 389);
+            this.ClientSize = new System.Drawing.Size(543, 389);
             this.Controls.Add(this.listaMaquillajeDataGridView);
             this.Controls.Add(this.maquillajeBLBindingNavigator);
             this.Margin = new System.Windows.Forms.Padding(2);
