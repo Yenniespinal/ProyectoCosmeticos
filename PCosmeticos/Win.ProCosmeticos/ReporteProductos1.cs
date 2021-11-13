@@ -16,14 +16,14 @@ namespace Win.ProCosmeticos {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class ReporteClientes : ReportClass {
+    public class ReporteProductos : ReportClass {
         
-        public ReporteClientes() {
+        public ReporteProductos() {
         }
         
         public override string ResourceName {
             get {
-                return "ReporteClientes.rpt";
+                return "ReporteProductos.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace Win.ProCosmeticos {
         
         public override string FullResourceName {
             get {
-                return "Win.ProCosmeticos.ReporteClientes.rpt";
+                return "Win.ProCosmeticos.ReporteProductos.rpt";
             }
             set {
                 // Do nothing
@@ -90,9 +90,9 @@ namespace Win.ProCosmeticos {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedReporteClientes : Component, ICachedReport {
+    public class CachedReporteProductos : Component, ICachedReport {
         
-        public CachedReporteClientes() {
+        public CachedReporteProductos() {
         }
         
         [Browsable(false)]
@@ -129,7 +129,7 @@ namespace Win.ProCosmeticos {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            ReporteClientes rpt = new ReporteClientes();
+            ReporteProductos rpt = new ReporteProductos();
             rpt.Site = this.Site;
             return rpt;
         }

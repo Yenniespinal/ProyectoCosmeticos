@@ -24,6 +24,7 @@ namespace BL.Cosmeticos
             categoria1.Descripcion = "Cremas";
             contexto.Categorias.Add(categoria1); 
 
+
             var categoria2 = new Categoria();
             categoria2.Descripcion = "Mascarillas Faciales";
             contexto.Categorias.Add(categoria2);
@@ -49,7 +50,7 @@ namespace BL.Cosmeticos
             contexto.Categorias.Add(categoria7);
 
             var categoria8 = new Categoria();
-            categoria8.Descripcion = "Rimer";
+            categoria8.Descripcion = "Rimel";
             contexto.Categorias.Add(categoria8);
 
             var categoria9 = new Categoria();

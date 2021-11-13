@@ -11,66 +11,33 @@ using System.Windows.Forms;
 
 namespace Win.ProCosmeticos
 {
-    public partial class Clientes : Form
+    public partial class FormVendedor : Form
     {
-        ClientesBL _clientes;
-
-        public Clientes()
+        VendedorBL _vendedor;
+        public FormVendedor()
         {
             InitializeComponent();
+     
+            _vendedor = new VendedorBL();
+            listaVendedorBindingSource.DataSource = _vendedor.ObtenerVendedor();
+           
+        
 
-            _clientes = new ClientesBL();
-            listaClientesBindingSource.DataSource = _clientes.ObtenerCliente();
-        }
+    }
 
-        private void idTextBox_TextChanged(object sender, EventArgs e)
+        private void listaVendedorBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void activoCheckBox_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void idLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void activoLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void nombreLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void nombreTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listaClientesBindingNavigator_RefreshItems(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listaClientesBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            listaClientesBindingSource.EndEdit();
-            var cliente = (Cliente) listaClientesBindingSource.Current;
+            listaVendedorBindingSource.EndEdit();
+            var vendedor = (Vendedor)listaVendedorBindingSource.Current;
             // MessageBox.Show(cliente);
 
-            var resultado = _clientes.GuardarCliente(cliente);
+            var resultado = _vendedor.GuardarVendedor(vendedor);
 
             if (resultado.Exitoso == true)
             {
-                listaClientesBindingSource.ResetBindings(false);
+                listaVendedorBindingSource.ResetBindings(false);
                 DeshabilitarHabilitarBottones(true);
-                MessageBox.Show("Cliente guardado");
+                MessageBox.Show("Vendedor guardado");
             }
             else
             {
@@ -80,8 +47,8 @@ namespace Win.ProCosmeticos
 
         private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
         {
-            _clientes.AgregarCliente();
-            listaClientesBindingSource.MoveLast();
+            _vendedor.AgregarVendedor();
+            listaVendedorBindingSource.MoveLast();
             DeshabilitarHabilitarBottones(false);
         }
 
@@ -102,7 +69,7 @@ namespace Win.ProCosmeticos
         {
             if (idTextBox.Text != "")           //Función para que no tire error cuando este vacio//
             {
-                var resultado = MessageBox.Show("Desea eliminar este Cliente?", "Eliminar", MessageBoxButtons.YesNo);
+                var resultado = MessageBox.Show("Desea eliminar este Vendedor?", "Eliminar", MessageBoxButtons.YesNo);
 
                 if (resultado == DialogResult.Yes)
                 {
@@ -112,37 +79,26 @@ namespace Win.ProCosmeticos
 
             }
 
-
         }
 
         private void Eliminar(int id)
         {
-            var resultado = _clientes.EliminarCliente(id);
+            var resultado = _vendedor.EliminarVendedor(id);
 
             if (resultado == true)                                     //Si el resultado es verdadero resetea o refresca la lista//
             {
-                listaClientesBindingSource.ResetBindings(false);
+                listaVendedorBindingSource.ResetBindings(false);
             }
             else
             {
-                MessageBox.Show("Error al eliminar el Cliente");    // Muestra un mensaje de error//
+                MessageBox.Show("Error al eliminar el Vendedor");    // Muestra un mensaje de error//
             }
-        }
-
-        private void Clientes_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void toolStripButtonCancelar_Click(object sender, EventArgs e)
         {
             DeshabilitarHabilitarBottones(true);
             Eliminar(0);
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
