@@ -118,6 +118,7 @@
             // listaVendedorBindingNavigator
             // 
             this.listaVendedorBindingNavigator.AddNewItem = null;
+            this.listaVendedorBindingNavigator.BackColor = System.Drawing.Color.Transparent;
             this.listaVendedorBindingNavigator.BindingSource = this.listaVendedorBindingSource;
             this.listaVendedorBindingNavigator.CountItem = this.bindingNavigatorCountItem;
             this.listaVendedorBindingNavigator.DeleteItem = null;
@@ -315,7 +316,11 @@
             this.Controls.Add(nombreLabel);
             this.Controls.Add(this.nombreTextBox);
             this.Controls.Add(this.listaVendedorBindingNavigator);
+            this.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormVendedor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Vendedor";
             ((System.ComponentModel.ISupportInitialize)(this.listaVendedorBindingNavigator)).EndInit();
             this.listaVendedorBindingNavigator.ResumeLayout(false);
